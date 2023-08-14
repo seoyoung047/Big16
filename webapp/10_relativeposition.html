@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<style type="text/css">
+		body {
+			font-weight:bold;
+			font-size:1.3em;
+			margin:0;
+			padding:0;
+		}
+		.sp {
+			position:static;
+			left:30px;			 	/* static에서는 적용 안 됨 */
+			background-color: cyan;
+		}
+		.rp1 {
+			position:relative;		/*이 블록이 현재 position:static일 때가 기준 */
+			left:30px;
+			top:-10px;
+			background-color: silver;
+			width:500px;
+			height:50px;
+		}
+		.rp2{
+			position:relative;
+			left:60px;
+			top:20px;
+			background-color: gray;
+			width:500px;
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="sp"> 
+		정적 위치 설정 적용
+	</div>
+	<div class="rp1">
+		상대 위치 설정 적용- left 30px, top -10px
+	</div>
+	<div class="rp2">
+		상대위치 설정 적용- left 60px, top 20px
+	</div>
+</body>
+</html>

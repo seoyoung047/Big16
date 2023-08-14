@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<style type="text/css">
+		.div1 {
+			float:left;
+			width:100px;
+			height:50px;
+			border:3px solid gray;
+		}
+		.div2 {/* div1의 float:left를 상속받음 */
+			border:3px solid red;
+		}
+		.div3 {
+			float:right; 
+			width:100px;
+			height:50px;
+			border:3px solid navy;
+		}
+		.div4 {
+			border:3px solid red;
+		 	/* clear:left;  */
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div class="div1">div1</div>
+	<div class="div2">div2
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 		  
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+	
+	</div>
+	<!-- <h2>clear</h2> -->
+	<div class="div3">div3</div>
+	<div class="div4">div4 ( float-clear )
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 		  
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float 
+		 float float  float  float  float  float  float
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get 방식</title>
+</head>
+<body>
+	<h2>Get 방식으로 데이터 전송</h2>
+	<form action="#" method="get">
+		<p>이름 : <input type="text" name="name"></p>
+		<p>연락처 : <input type="text" name="tel"></p>
+		<p>주소 : <input type="text" name="addr"></p>
+		<p>구분: <input type="text" name="gubnum"></p>
+		<input type="submit" value="연락처 추가" name="get">
+	</form>
+	<h2>Post 방식으로 데이터 전송</h2>
+	<form action="#" method = "post">
+	<fieldset>
+	<legend>연락처 추가</legend>
+	<table>
+		<tbody>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" name="name" placeholder="이름"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="password" placeholder="비밀번호" required></td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td><input type="text" tel="tel" placeholder="연락처"></td>
+		</tr>
+		<tr>
+			<td>주소</td>
+			<td><input type="text" addr="addr" placeholder="주소"></td>
+		</tr>
+		<tr>
+			<td>구분</td>
+			<!-- <td><input type="text" gubnum="gubnum" placeholder="가족,친구,기타"></td> -->
+			<td>
+				<input type="radio" name="gubun" value="10">가족<br>
+				<input type="radio" name="gubun" value="20">친구<br>
+				<input type="radio" name="gubun" value="30">기타<br>
+				
+				<select name="gubun">
+					<optgroup label="구분">	
+						<option value="10">가족</option>
+						<option value="20" selected>친구</option>
+						<option value="30">기타</option>
+					</optgroup>
+					<optgroup label="지역">	
+						<option value = "100">서울</option>
+						<option value = "200">경기</option>
+						<option value = "300">강원</option>
+					</optgroup>
+				</select>
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan ="2">
+				<input type="submit" value="연락처추가" name="post">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	</fieldset>
+	<input type="radio" name="a1">a1<!-- 동그라미 -->
+	<input type="radio" name="a1">a2
+	<input type="radio" name="a1">a3
+	<input type="radio" name="a1">a4<br>
+	
+	<input type="checkbox" name="b1">b1 <!-- 네모 -->
+	<input type="checkbox" name="b1">b2 
+	<input type="checkbox" name="b1">b3 
+	<input type="checkbox" name="b1">b4<br>
+	
+	<button onclick="alter('클릭1')">클릭1</button>
+	<input type="button" onclick="alter('클릭2')" value="클릭2"> <br>
+	<!-- <textarea rows="5" cols="30" ></textarea> -->
+	<!-- 선택목록 주석 단축키 : ctrl+shift+'/' -->
+	<p></p>
+	<!-- 날짜와 시간 태그 -->
+	오늘 날짜 : <input type="date"><br>
+	시작 날짜 : <input type="date" min="2023-03-01" max="2023-03-05"><br>
+	종료 날짜	: <input type="date" min="2023-03-06" max="2023-03-13"><br>
+	월간 계획	: <input type="month" ><br>
+	주간 계획	: <input type="week" ><br>
+	Time	: <input type="time" ><br>
+	생년월일	: <input type="datetime-local" ><br>
+	
+	<input type="color"><br>
+	<input type="number" min="0" max="10"><br>
+	<input type="range" min="0" max="100"><br>
+	
+	
+	</form>
+</body>
+</html>
